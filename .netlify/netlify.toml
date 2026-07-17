@@ -1,0 +1,39 @@
+plugins = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/siddharthbaswa/Desktop/apk-download-page"
+publishOrigin = "default"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+
+[[headers]]
+for = "/app.apk"
+
+[headers.values]
+Content-Type = "application/vnd.android.package-archive"
+Content-Disposition = "attachment; filename=\"MusicApp.apk\""
+Cache-Control = "no-store, no-cache"
