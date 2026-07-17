@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MusicApp - Download APK | Free Music Player for Android</title>
+  <meta name="description" content="Download MusicApp APK for free. Stream trending songs, create playlists, and enjoy ad-free music on Android. Lightweight, fast, and beautiful." />
+  <meta name="keywords" content="MusicApp, APK download, music player, Android app, free music, streaming, playlists" />
+  <meta name="author" content="MusicApp" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MusicApp - Download APK | Free Music Player" />
+  <meta property="og:description" content="Stream trending songs, create playlists, and enjoy ad-free music on Android." />
+  <meta property="og:image" content="https://your-domain.com/og-image.png" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:site_name" content="MusicApp" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MusicApp - Download APK" />
+  <meta name="twitter:description" content="Free music player for Android. Stream, download, and enjoy." />
+  <meta name="twitter:image" content="https://your-domain.com/og-image.png" />
+
+  <!-- Android -->
+  <meta name="theme-color" content="#0a0a14" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="MusicApp" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%238B5CF6'/><stop offset='100%25' stop-color='%23D946EF'/></linearGradient></defs><circle cx='96' cy='96' r='90' fill='url(%23g)'/><ellipse cx='76' cy='120' rx='20' ry='15' transform='rotate(-20 76 120)' fill='white'/><rect x='93' y='52' width='6' height='70' rx='3' fill='white'/><path d='M99 52 C99 52 118 60 118 75 C118 83 106 79 99 73' fill='white' opacity='0.9'/></svg>" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MusicApp",
+    "operatingSystem": "Android",
+    "applicationCategory": "MultimediaApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Stream trending songs, create playlists, and enjoy ad-free music on Android.",
+    "fileSize": "4.4MB",
+    "softwareVersion": "1.0.0",
+    "downloadUrl": "https://your-domain.com/app.apk"
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-primary: #0a0a14;
+      --bg-card: #12121e;
+      --bg-card-hover: #1a1a2e;
+      --border: rgba(255,255,255,0.06);
+      --text-primary: #f0f0f5;
+      --text-secondary: #9898a8;
+      --text-muted: #5a5a6e;
+      --accent: #8b5cf6;
+      --accent-glow: rgba(139,92,246,0.3);
+      --accent-hover: #a78bfa;
+      --gradient: linear-gradient(135deg, #8b5cf6, #d946ef);
+      --success: #22c55e;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* --- Animations --- */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 var(--accent-glow); }
+      50% { box-shadow: 0 0 0 12px transparent; }
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .fade-up { animation: fadeUp 0.6s ease-out both; }
+    .fade-up-d1 { animation-delay: 0.1s; }
+    .fade-up-d2 { animation-delay: 0.2s; }
+    .fade-up-d3 { animation-delay: 0.3s; }
+    .fade-up-d4 { animation-delay: 0.4s; }
+    .fade-up-d5 { animation-delay: 0.5s; }
+
+    /* --- Layout --- */
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* --- Header --- */
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+    .header-brand svg { width: 32px; height: 32px; }
+    .header-brand span {
+      font-weight: 700;
+      font-size: 18px;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .header-badge {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 20px;
+      background: rgba(139,92,246,0.15);
+      color: var(--accent);
+      font-weight: 600;
+      border: 1px solid rgba(139,92,246,0.2);
+    }
+
+    /* --- Hero --- */
+    .hero {
+      padding: 48px 0 40px;
+      text-align: center;
+    }
+    .app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 24px;
+      margin: 0 auto 20px;
+      animation: float 3s ease-in-out infinite;
+      filter: drop-shadow(0 8px 24px var(--accent-glow));
+    }
+    .app-icon img { width: 100%; height: 100%; border-radius: 24px; }
+    .app-icon svg { width: 100%; height: 100%; }
+    .app-name {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .app-tagline {
+      font-size: 16px;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* --- Download Card --- */
+    .download-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 24px;
+      margin-bottom: 24px;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .meta-item {
+      text-align: center;
+    }
+    .meta-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .meta-value {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .download-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px 32px;
+      border: none;
+      border-radius: 14px;
+      background: var(--gradient);
+      color: white;
+      font-size: 17px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .download-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 32px var(--accent-glow);
+    }
+    .download-btn:active {
+      transform: translateY(0);
+    }
+    .download-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+    .download-btn.loading {
+      pointer-events: none;
+      opacity: 0.8;
+    }
+    .download-btn .spinner {
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+      display: none;
+    }
+    .download-btn.loading .spinner { display: block; }
+    .download-btn.loading .btn-icon { display: none; }
+    .download-btn.loading .btn-text { display: none; }
+    .download-btn.loading .btn-loading { display: inline; }
+    .btn-loading { display: none; }
+
+    .download-hint {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+
+    .download-count {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .download-count strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* --- Platform Badge --- */
+    .platform-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(139,92,246,0.1);
+      border: 1px solid rgba(139,92,246,0.2);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .platform-badge svg { width: 14px; height: 14px; }
+
+    /* --- Platform Download Buttons --- */
+    .download-btn-secondary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 14px 24px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--bg-card-hover);
+      color: var(--text-primary);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      margin-top: 10px;
+    }
+    .download-btn-secondary:hover {
+      border-color: rgba(139,92,246,0.3);
+      background: rgba(139,92,246,0.1);
+    }
+    .download-btn-secondary svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .platform-actions {
+      display: none;
+    }
+    .platform-actions.active {
+      display: block;
+    }
+
+    /* --- Screenshots --- */
+    .screenshots {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+    .screenshots-scroll {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 8px;
+      scrollbar-width: none;
+    }
+    .screenshots-scroll::-webkit-scrollbar { display: none; }
+    .screenshot {
+      flex: 0 0 160px;
+      scroll-snap-align: start;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      aspect-ratio: 9/16;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    /* --- Features --- */
+    .features {
+      margin-bottom: 24px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 16px;
+      transition: all 0.2s ease;
+    }
+    .feature-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(139,92,246,0.2);
+    }
+    .feature-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(139,92,246,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+    .feature-card h3 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: var(--text-primary);
+    }
+    .feature-card p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* --- FAQ --- */
+    .faq {
+      margin-bottom: 40px;
+    }
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      margin-bottom: 8px;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      padding: 18px 20px;
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      font-size: 15px;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .faq-question:hover { color: var(--accent); }
+    .faq-arrow {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+      color: var(--text-muted);
+    }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .faq-answer-inner {
+      padding: 0 20px 18px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .faq-item.open .faq-answer { max-height: 200px; }
+
+    /* --- Info Table --- */
+    .info-table {
+      margin-bottom: 24px;
+    }
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+    .info-row:last-child { border-bottom: none; }
+    .info-label { color: var(--text-muted); }
+    .info-value { color: var(--text-primary); font-weight: 500; font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace; font-size: 13px; word-break: break-all; text-align: right; max-width: 60%; }
+
+    /* --- Footer --- */
+    footer {
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    /* --- Responsive --- */
+    @media (max-width: 480px) {
+      .hero { padding: 36px 0 28px; }
+      .app-name { font-size: 26px; }
+      .app-tagline { font-size: 14px; }
+      .meta-grid { gap: 12px; }
+      .meta-value { font-size: 14px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .screenshot { flex: 0 0 130px; }
+    }
+
+    /* --- Reduced Motion --- */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="header-brand">
+        <svg viewBox="0 0 192 192" width="32" height="32">
+          <defs>
+            <linearGradient id="hg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#8B5CF6"/>
+              <stop offset="100%" stop-color="#D946EF"/>
+            </linearGradient>
+          </defs>
+          <circle cx="96" cy="96" r="90" fill="url(#hg)"/>
+          <ellipse cx="76" cy="120" rx="20" ry="15" transform="rotate(-20 76 120)" fill="white"/>
+          <rect x="93" y="52" width="6" height="70" rx="3" fill="white"/>
+          <path d="M99 52 C99 52 118 60 118 75 C118 83 106 79 99 73" fill="white" opacity="0.9"/>
+        </svg>
+        <span>MusicApp</span>
+      </a>
+      <span class="header-badge">v1.0.0</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="hero fade-up">
+      <div class="app-icon">
+        <svg viewBox="0 0 192 192">
+          <defs>
+            <linearGradient id="ig" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#8B5CF6"/>
+              <stop offset="50%" stop-color="#D946EF"/>
+              <stop offset="100%" stop-color="#F0ABFC"/>
+            </linearGradient>
+          </defs>
+          <circle cx="96" cy="96" r="90" fill="url(#ig)"/>
+          <ellipse cx="75" cy="68" rx="38" ry="30" fill="white" opacity="0.15"/>
+          <ellipse cx="76" cy="120" rx="20" ry="15" transform="rotate(-20 76 120)" fill="white"/>
+          <rect x="93" y="52" width="6" height="70" rx="3" fill="white"/>
+          <path d="M99 52 C99 52 118 60 118 75 C118 83 106 79 99 73" fill="white" opacity="0.9"/>
+          <g fill="white" opacity="0.8">
+            <path d="M138 75 L140 70 L142 75 L147 77 L142 79 L140 84 L138 79 L133 77 Z"/>
+          </g>
+        </svg>
+      </div>
+      <h1 class="app-name">MusicApp</h1>
+      <p class="app-tagline">Stream trending songs, build playlists, and enjoy ad-free music on Android.</p>
+    </section>
+
+    <!-- Download Card -->
+    <section class="download-card fade-up fade-up-d1">
+      <!-- Detected Platform Badge -->
+      <div style="text-align:center;">
+        <div class="platform-badge" id="platform-badge" style="display:none;">
+          <svg id="platform-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+          <span id="platform-name"></span>
+        </div>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <div class="meta-label">Version</div>
+          <div class="meta-value">1.0.0</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Size</div>
+          <div class="meta-value" id="apk-size">4.4 MB</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Updated</div>
+          <div class="meta-value">Jul 16, 2026</div>
+        </div>
+      </div>
+
+      <!-- Android -->
+      <div class="platform-actions active" id="dl-android">
+        <a href="app.apk" class="download-btn" id="download-btn">
+          <div class="spinner"></div>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span class="btn-text">Download APK</span>
+          <span class="btn-loading">Downloading...</span>
+        </a>
+        <p class="download-hint">Requires Android 7.0 or higher</p>
+      </div>
+
+      <!-- iOS / iPadOS -->
+      <div class="platform-actions" id="dl-ios">
+        <a href="app.apk" class="download-btn">
+          <div class="spinner"></div>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span class="btn-text">Download APK</span>
+          <span class="btn-loading">Downloading...</span>
+        </a>
+        <button class="download-btn-secondary" onclick="installPWA()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+          <span>Or install as Web App</span>
+        </button>
+        <p class="download-hint">Requires Android 7.0 or higher</p>
+      </div>
+
+      <!-- Windows -->
+      <div class="platform-actions" id="dl-windows">
+        <a href="app.apk" class="download-btn">
+          <div class="spinner"></div>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span class="btn-text">Download APK</span>
+          <span class="btn-loading">Downloading...</span>
+        </a>
+        <button class="download-btn-secondary" onclick="installPWA()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+          <span>Or install as Desktop App</span>
+        </button>
+        <p class="download-hint">Requires Android 7.0 or higher</p>
+      </div>
+
+      <!-- macOS -->
+      <div class="platform-actions" id="dl-macos">
+        <a href="app.apk" class="download-btn">
+          <div class="spinner"></div>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span class="btn-text">Download APK</span>
+          <span class="btn-loading">Downloading...</span>
+        </a>
+        <button class="download-btn-secondary" onclick="installPWA()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+          <span>Or install as Desktop App</span>
+        </button>
+        <p class="download-hint">Requires Android 7.0 or higher</p>
+      </div>
+
+      <!-- Linux -->
+      <div class="platform-actions" id="dl-linux">
+        <a href="app.apk" class="download-btn">
+          <div class="spinner"></div>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span class="btn-text">Download APK</span>
+          <span class="btn-loading">Downloading...</span>
+        </a>
+        <button class="download-btn-secondary" onclick="installPWA()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+          <span>Or install as Desktop App</span>
+        </button>
+        <p class="download-hint">Requires Android 7.0 or higher</p>
+      </div>
+
+      <p class="download-count"><strong id="download-count">0</strong> downloads</p>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="screenshots fade-up fade-up-d2">
+      <h2 class="section-title">Screenshots</h2>
+      <div class="screenshots-scroll">
+        <div class="screenshot" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="screenshot" style="background: linear-gradient(135deg, #1a1025 0%, #2d1b4e 100%);">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <div class="screenshot" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="screenshot" style="background: linear-gradient(135deg, #1c1917 0%, #292524 100%);">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+        </div>
+        <div class="screenshot" style="background: linear-gradient(135deg, #172554 0%, #1e3a5f 100%);">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features fade-up fade-up-d3">
+      <h2 class="section-title">Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">&#9835;</div>
+          <h3>Smart Search</h3>
+          <p>Find any song instantly with intelligent search across millions of tracks.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#9825;</div>
+          <h3>Playlists</h3>
+          <p>Create and manage custom playlists. Organize your music your way.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#9733;</div>
+          <h3>Charts &amp; Trending</h3>
+          <p>Discover what's trending. Top charts updated in real-time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#8615;</div>
+          <h3>Offline Downloads</h3>
+          <p>Download songs for offline playback. Listen without internet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Table -->
+    <section class="info-table fade-up fade-up-d4">
+      <h2 class="section-title">App Information</h2>
+      <div class="info-row">
+        <span class="info-label">App Name</span>
+        <span class="info-value">MusicApp</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Package</span>
+        <span class="info-value">com.musicapp.app</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Version</span>
+        <span class="info-value">1.0.0</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Min Android</span>
+        <span class="info-value">7.0 (API 24)</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">File Size</span>
+        <span class="info-value" id="apk-size-info">4.4 MB</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Last Updated</span>
+        <span class="info-value">July 16, 2026</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">SHA-256</span>
+        <span class="info-value" id="sha256">Calculating...</span>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq fade-up fade-up-d5">
+      <h2 class="section-title">FAQ</h2>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How do I install the APK?
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Tap the Download button above. Once downloaded, open the APK file. Your device may ask you to allow installations from unknown sources &mdash; enable this in Settings &gt; Security. Then tap Install.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Is it safe to install?
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Yes. This is the official MusicApp APK built from verified source code. The file is served directly from this page with no modifications. You can verify the SHA-256 checksum listed above.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What Android version is required?
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            MusicApp requires Android 7.0 (Nougat) or higher. It is compatible with most modern Android devices from 2017 onwards.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Does it work offline?
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Yes. You can download songs for offline playback. Browse your downloaded music anytime without an internet connection.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 MusicApp. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // --- Device Detection ---
+    (function() {
+      var ua = navigator.userAgent || '';
+      var platform = navigator.platform || '';
+      var isAndroid = /Android/i.test(ua);
+      var isIOS = /iPhone|iPad|iPod/i.test(ua) || (platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      var isWindows = /Win/i.test(platform);
+      var isMac = /Mac/i.test(platform) && !isIOS;
+      var isLinux = /Linux/i.test(platform) && !isAndroid;
+
+      var detected = 'unknown';
+      var iconPath = '';
+      var iconLabel = '';
+
+      if (isAndroid) {
+        detected = 'android';
+        iconPath = 'M17.523 15.34q-.71 0-1.203-.494-.493-.493-.493-1.203 0-.062.018-.188l-1.024-1.024V9.84l3.24 1.848v3.518q0 .523-.332.886-.332.363-.855.363l-.35.513zm-4.474 0q-.174 0-.35-.062l-.35-.513q-.523 0-.855-.363-.332-.363-.332-.886V11.69l3.24-1.848v2.822q0 .062.018.188 0 .71-.494 1.203-.493.494-1.203.494zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z';
+        iconLabel = 'Android Detected';
+      } else if (isIOS) {
+        detected = 'ios';
+        iconPath = 'M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z';
+        iconLabel = 'iOS / iPadOS Detected';
+      } else if (isWindows) {
+        detected = 'windows';
+        iconPath = 'M3 12V6.75l6-1.32v6.48L3 12zm7.3-6.48L20.5 4v7.92h-10.2V5.52zM3 13l6 .09v6.37l-6-1.15V13zm7.3.11h10.2V20l-10.2-1.8V13.11z';
+        iconLabel = 'Windows Detected';
+      } else if (isMac) {
+        detected = 'macos';
+        iconPath = 'M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z';
+        iconLabel = 'macOS Detected';
+      } else if (isLinux) {
+        detected = 'linux';
+        iconPath = 'M12.504 0c-.155 0-.311.015-.466.045C9.902.377 8.38 2.3 8.38 4.588v1.59H6.74c-1.358 0-2.46 1.102-2.46 2.46v.03c-.525.3-1.17.805-1.47 1.39-.24.47-.382.995-.382 1.55v.1c.01 1.31.545 2.535 1.41 3.47v.1c-.03.35-.07.7-.07 1.06 0 2.64 2.14 4.78 4.78 4.78.57 0 1.12-.1 1.63-.3.52.37 1.16.6 1.84.6h.04c.68 0 1.32-.23 1.84-.6.51.2 1.06.3 1.63.3 2.64 0 4.78-2.14 4.78-4.78 0-.36-.04-.71-.07-1.06.865-.935 1.4-2.16 1.41-3.47v-.1c0-.555-.143-1.08-.382-1.55-.3-.585-.945-1.09-1.47-1.39v-.03c0-1.358-1.102-2.46-2.46-2.46H15.62V4.588c0-2.288-1.522-4.21-3.658-4.543A3.96 3.96 0 0012.504 0z';
+        iconLabel = 'Linux Detected';
+      }
+
+      // Show platform badge
+      if (detected !== 'unknown') {
+        var badge = document.getElementById('platform-badge');
+        var icon = document.getElementById('platform-icon');
+        var name = document.getElementById('platform-name');
+        if (badge) badge.style.display = 'inline-flex';
+        if (icon) icon.innerHTML = '<path d="' + iconPath + '"/>';
+        if (name) name.textContent = iconLabel;
+      }
+
+      // Show correct download section
+      var sections = document.querySelectorAll('.platform-actions');
+      sections.forEach(function(s) { s.classList.remove('active'); });
+      var target = document.getElementById('dl-' + detected);
+      if (target) {
+        target.classList.add('active');
+      } else {
+        // Fallback: show Android
+        var fallback = document.getElementById('dl-android');
+        if (fallback) fallback.classList.add('active');
+      }
+
+      // Update meta description for SEO per platform
+      var descriptions = {
+        android: 'Download MusicApp APK for free. Stream trending songs, create playlists, and enjoy ad-free music on Android.',
+        ios: 'MusicApp for iPhone and iPad. Install as a web app or view on the App Store.',
+        windows: 'MusicApp for Windows. Install as a desktop app or download the APK.',
+        macos: 'MusicApp for Mac. Install as a desktop app or download the APK.',
+        linux: 'MusicApp for Linux. Install as a desktop app or download the APK.'
+      };
+      var metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc && descriptions[detected]) {
+        metaDesc.setAttribute('content', descriptions[detected]);
+      }
+    })();
+
+    // --- PWA Install ---
+    var deferredPrompt = null;
+    window.addEventListener('beforeinstallprompt', function(e) {
+      e.preventDefault();
+      deferredPrompt = e;
+    });
+
+    function installPWA() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(function() {
+          deferredPrompt = null;
+        });
+      } else {
+        var ua = navigator.userAgent;
+        if (/iPhone|iPad|iPod/i.test(ua)) {
+          alert('To install:\n1. Tap the Share button\n2. Scroll down and tap "Add to Home Screen"\n3. Tap "Add"');
+        } else if (/Safari/i.test(ua) && !/Chrome/i.test(ua)) {
+          alert('To install:\n1. Tap the Share button\n2. Tap "Add to Home Screen"');
+        } else {
+          alert('To install:\n1. Click the menu (3 dots) in your browser\n2. Select "Install MusicApp" or "Add to Home Screen"');
+        }
+      }
+    }
+
+    // --- Force APK Download ---
+    function downloadAPK(e) {
+      e.preventDefault();
+      var btn = e.currentTarget;
+      var originalText = btn.querySelector('.btn-text');
+      if (originalText) originalText.textContent = 'Starting download...';
+      
+      window.incrementDownloadCount();
+      
+      // Use fetch + blob to force download on ALL platforms including Android
+      fetch('app.apk').then(function(r) { return r.blob(); }).then(function(blob) {
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'MusicApp.apk';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }).catch(function() {
+        // Fallback: direct link
+        window.open('app.apk', '_blank');
+      });
+      
+      setTimeout(function() {
+        if (originalText) originalText.textContent = 'Download APK';
+      }, 5000);
+    }
+
+    // Bind downloadAPK to all primary download buttons
+    document.querySelectorAll('.platform-actions .download-btn').forEach(function(btn) {
+      btn.addEventListener('click', downloadAPK);
+    });
+
+    // --- Download Counter (server-side or localStorage fallback) ---
+    window.incrementDownloadCount = function() {
+      // Try server endpoint first
+      fetch('/count').then(function(r) {
+        if (!r.ok) throw new Error('no server');
+        return r.json();
+      }).then(function(m) {
+        var el = document.getElementById('download-count');
+        if (el) el.textContent = m.downloads.toLocaleString();
+      }).catch(function() {
+        // Fallback: localStorage
+        var count = parseInt(localStorage.getItem('musicapp_dl') || '0', 10) + 1;
+        localStorage.setItem('musicapp_dl', count.toString());
+        var el = document.getElementById('download-count');
+        if (el) el.textContent = count.toLocaleString();
+      });
+    };
+
+    // --- FAQ Toggle ---
+    function toggleFaq(btn) {
+      var item = btn.parentElement;
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(el) {
+        el.classList.remove('open');
+      });
+      if (!wasOpen) item.classList.add('open');
+    }
+
+    // --- Fetch real APK metadata from server or compute client-side ---
+    (function() {
+      // Try server endpoint first (for Node.js hosts)
+      fetch('/meta').then(function(r) {
+        if (!r.ok) throw new Error('no server');
+        return r.json();
+      }).then(function(m) {
+        var sizeEls = document.querySelectorAll('#apk-size');
+        sizeEls.forEach(function(el) { el.textContent = m.sizeFormatted; });
+        var sizeInfo = document.getElementById('apk-size-info');
+        if (sizeInfo) sizeInfo.textContent = m.sizeFormatted;
+        var sha = document.getElementById('sha256');
+        if (sha) sha.textContent = m.sha256Short;
+        var countEl = document.getElementById('download-count');
+        if (countEl) countEl.textContent = m.downloads.toLocaleString();
+      }).catch(function() {
+        // Fallback: client-side for static hosting (Netlify/Vercel/GitHub Pages)
+        fetch('app.apk', { method: 'HEAD' }).then(function(res) {
+          var size = parseInt(res.headers.get('content-length') || '0', 10);
+          var sizeMB = (size / (1024 * 1024)).toFixed(1) + ' MB';
+          document.querySelectorAll('#apk-size').forEach(function(el) { el.textContent = sizeMB; });
+          var sizeInfo = document.getElementById('apk-size-info');
+          if (sizeInfo) sizeInfo.textContent = sizeMB;
+        }).catch(function() {});
+        var countEl = document.getElementById('download-count');
+        var count = parseInt(localStorage.getItem('musicapp_dl') || '0', 10);
+        if (countEl) countEl.textContent = count.toLocaleString();
+      });
+    })();
+
+    // --- Intersection Observer for fade-in ---
+    (function() {
+      if (!('IntersectionObserver' in window)) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = 'running';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-up').forEach(function(el) {
+        el.style.animationPlayState = 'paused';
+        observer.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>
